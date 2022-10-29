@@ -36,7 +36,9 @@
 
 
 import express from "express"
+import cors from "cors"
 const app = express();
+app.use(cors())
 app.use(express.json()); //it use to decrypt express for server
 const port = process.env.PORT || 3000;
 let users= [];
